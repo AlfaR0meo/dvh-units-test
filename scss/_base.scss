@@ -1,0 +1,25 @@
+/* ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■ */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: var(--ff-system, sans-serif);
+    font-weight: 400;
+    line-height: 1;
+
+    @supports (-webkit-tap-highlight-color: transparent) {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+.page-wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+.container {
+    max-width: $maxWidthContainer + px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.none, [none] {
+    display: none !important;
+}
